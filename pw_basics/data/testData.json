@@ -1,0 +1,13 @@
+[
+    {
+        "testCaseID": "TC001",
+        "userName": "vidyar@testleaf.com",
+        "password": "Sales@123"
+    },
+
+    {
+        "testCaseID": "TC002",
+        "userName": "vidyar@testleaf.com",
+        "password": "Sales@123"
+    }
+]

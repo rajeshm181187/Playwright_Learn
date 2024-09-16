@@ -1,0 +1,49 @@
+Test annotations
+test.only -->only the specified test
+test.skip-->ignoring the testcase from execution-->reported in the report as skip
+test.fixme-->there is known failure with the script -->
+   test is in issue-->skip it
+test.slow--> it will slow the playwright execution triple of the amount of the timeout
+test.describe -->to group the testcases
+test.describe-->3 modes 
+            -->sequential -->one after the other execution
+            -->Serial -->inject dependenccy based on the status of the test1 , test2 will be executed
+                     -->if test1 fails -->test2 will be skipped
+            -->parallel
+                    to run the tests in parallel
+        test.describe.configure({mode:"serial",retries:1})
+
+    Tags -->to execute the test based on the category
+
+    test(``,{tag:"@smoke"},async()=>{})
+    npx playwright test --grep 'smoke'  -->only the tests with smoke tags will be executeds
+
+    npx playwright test learn --> text match with the test decription  will be executed        
+
+
+
+
+
+
+
+test.describe(`Grouping salesforce and Leaftaps application`,async()=>{
+   
+test(`Learn test annotations for grouping `,{tag:["@smoke","@regresion"]},async({page})=>{   
+    await page.goto("https://login.salesforce.com/")
+    await page.fill("#username","vidyar@testleaf.com")
+    await page.fill("#password","Sales@123")
+    await page.click("#Login")    
+    await page.click(".slds-icon-waffle")   
+})
+
+
+test(`Learn test annotations using describe `,{tag:"@regression"},async({page})=>{   
+    await page.goto("http://leaftaps.com/opentaps/control/main")
+    await page.fill("#username","demoSalesManager")
+    await page.fill("#password","crmsfa")
+    await page.click(".decorativeSubmit")    
+       })
+    })
+
+
+
