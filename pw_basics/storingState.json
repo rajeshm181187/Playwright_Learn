@@ -1,0 +1,105 @@
+{
+  "cookies": [
+    {
+      "name": "JSESSIONID",
+      "value": "110D25FD3A75379771904A1162E8E554.jvm1",
+      "domain": "leaftaps.com",
+      "path": "/opentaps",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OFBiz.Visitor",
+      "value": "324245",
+      "domain": "leaftaps.com",
+      "path": "/",
+      "expires": 1758034194.067493,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_BFM17W6LPR",
+      "value": "GS1.1.1726498194.1.0.1726498194.0.0.0",
+      "domain": ".leaftaps.com",
+      "path": "/",
+      "expires": 1761058194.622371,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_XC5DRQT2CH",
+      "value": "GS1.1.1726498194.1.0.1726498194.0.0.0",
+      "domain": ".leaftaps.com",
+      "path": "/",
+      "expires": 1761058194.658069,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.777604584.1726498195",
+      "domain": ".leaftaps.com",
+      "path": "/",
+      "expires": 1761058194.769595,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.246354047.1726498195",
+      "domain": ".leaftaps.com",
+      "path": "/",
+      "expires": 1726584594,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat_gtag_UA_241053063_1",
+      "value": "1",
+      "domain": ".leaftaps.com",
+      "path": "/",
+      "expires": 1726498254,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ai_user",
+      "value": "9w6VL75qMzJkQs8qWxGPpm|2024-09-16T14:49:54.806Z",
+      "domain": "leaftaps.com",
+      "path": "/",
+      "expires": 1758034194.816385,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CLID",
+      "value": "e62f549442b54cb482923726b585535c.20240916.20250916",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1758034194.906108,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clck",
+      "value": "ghtcon%7C2%7Cfp8%7C0%7C1720",
+      "domain": ".leaftaps.com",
+      "path": "/",
+      "expires": 1758034195,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
