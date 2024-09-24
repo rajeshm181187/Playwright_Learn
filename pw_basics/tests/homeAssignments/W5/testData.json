@@ -1,0 +1,17 @@
+[
+    {
+        "TestCaseName": "TC001",
+        "user": "demoSalesManager",
+        "password" : "crmsfa",
+        "url" : "http://leaftaps.com/opentaps/control/main",
+        "companyName": "Test company",
+        "FirstName": "TestFirst",
+        "LastName":"TestLast",
+        "Source": "Direct Mail",
+        "MarkCamp": "DEMO_MKTG_CAMP",
+        "currency": "INR",
+        "Country": "India",
+        "State": "TAMILNADU"   
+    }
+
+]

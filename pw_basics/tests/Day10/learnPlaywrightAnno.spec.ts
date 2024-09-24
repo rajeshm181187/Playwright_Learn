@@ -17,6 +17,7 @@ test.describe(`Grouping salesforce and Leaftaps application`,{tag: '@smoke'},asy
         await page.fill("#username","demoSalesManager")
         await page.fill("#password","crmsfa")
         await page.click(".decorativeSubmit")    
+        await page.click()
            })
         })
     

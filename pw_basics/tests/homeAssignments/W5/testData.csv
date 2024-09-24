@@ -1,0 +1,2 @@
+TestCaseName,user,password,url,companyName,FirstName,LastName,Source,MarkCamp,currency,Country,State
+TC001,demoSalesManager,crmsfa, http://leaftaps.com/opentaps/control/main,Test Company,TestFirst,TestLast,Direct Mail,DEMO_MKTG_CAMP,INR,India,TAMILNADU

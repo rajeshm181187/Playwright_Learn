@@ -1,0 +1,88 @@
+Steps to do CRUD operation with Servicenow
+Post call
+ Endpoint -->https://dev216320.service-now.com/api/now/table/incident/
+ Authorization  -->basic auth -->username and password
+ body -->json 
+ {
+    "description":"",
+ }
+
+ Response -->201 created
+Get specific record
+ Endpoint -->https://dev216320.service-now.com/api/now/table/incident/sys_id
+ Authorization  -->basic auth -->username and password
+ No body required
+
+ Response : 200 OK
+PATCH 
+Endpoint -->https://dev216320.service-now.com/api/now/table/incident/sys_id
+ Authorization  -->basic auth -->username and password
+ body -->json 
+ {
+    "location":"",
+ }
+ Response : 200 OK
+
+Delete
+ Endpoint -->https://dev216320.service-now.com/api/now/table/incident/sys_id
+ Authorization  -->basic auth -->username and password
+ No body required
+ Response : 204 No Content
+
+
+ SalesForce 
+   Step:1 -->Generate OAuth token
+   Endpoint-->https://login.salesforce.com/services/oauth2/token 
+   Body
+    grant_type
+    client_id
+    client_secret
+    username
+    password
+
+    Response -->200 ok  -->response data with acesstoken
+To Create Lead resource
+Post
+ Endpoint : https://testleaf-da-dev-ed.develop.my.salesforce.com/services/data/v62.0/sobjects/Lead
+ Authorization :access_token -->Bearer token
+                content_type :application/json
+ Body :{
+    "Lastname":"",
+    "company":""
+ }
+
+GET
+ Endpoint : https://testleaf-da-dev-ed.develop.my.salesforce.com/services/data/v62.0/sobjects/Lead/id
+ Authorization :access_token -->Bearer token
+                content_type :application/json
+ No Body Content
+Patch
+ Endpoint : https://testleaf-da-dev-ed.develop.my.salesforce.com/services/data/v62.0/sobjects/Lead/id
+ Authorization :access_token -->Bearer token
+                content_type :application/json
+ Body :{
+    "firstname":"",
+   "salutation":"Mrs"
+ }
+ 
+Delete 
+ Endpoint : https://testleaf-da-dev-ed.develop.my.salesforce.com/services/data/v62.0/sobjects/Lead/id
+ Authorization :access_token -->Bearer token
+                content_type :application/json
+No Body Content
+
+
+var rsp=pm.response.json();
+var account_id=rsp.id
+pm.globals.set("Account_id", account_id);
+
+
+
+
+var resp=pm.response.json();
+var accessToken=resp.access_token;
+pm.globals.set("Access_Token",accessToken);
+
+var resp=pm.response.json();
+var sysId=resp.result.sys_id
+pm.globals.set("Sys_ID", sysId);
